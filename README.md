@@ -1,2 +1,4 @@
 # SAScanConverter
  SAScan file converter for Brad
+
+The code written imports the pandas and numpy libraries, reads in a CSV file located at a specific file path using pandas' read_csv function and assigns the data to a dataframe. It then splits the data in the dataframe into two columns using semicolon as the delimiter and renames the column headers. Next, it converts the "freq" and "level" columns from strings to float/numeric data type. It then divides the values in the "freq" column by one million and rounds the "freq" column to three decimal places and the "level" column to two decimal places. Finally, it concatenates the updated "freq" and "level" columns into a new dataframe and exports the data to a new CSV file in a specific folder. Overall, the code performs data cleaning and formatting operations on the input CSV file to create a new, cleaned CSV file.
